@@ -8,7 +8,7 @@ services:
       - DB_HOST=db
       - DB_PORT=5432
       - DB_USERNAME=postgres
-      - DB_PASSWORD=192.168.1.8
+      - DB_PASSWORD=
       - DB_NAME=gestion_envios
     depends_on:
       - db
@@ -17,7 +17,7 @@ services:
     image: postgres:14
     environment:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
+      POSTGRES_PASSWORD: 
       POSTGRES_DB: gestion_envios
     ports:
       - '5432:5432'
